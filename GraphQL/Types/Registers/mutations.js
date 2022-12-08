@@ -12,6 +12,7 @@ export const mutations = {
         return dataRegister;
     },
     updateRegister: (_, {dataRegister}) => {
+        
         let modifiedIndex;
         Data.map((item, index)=>{
             if (item.id === dataRegister.id){
