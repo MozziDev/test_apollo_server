@@ -1,0 +1,15 @@
+type RegistersData {
+    id: Int,
+    equipment_id: Int,
+    address_registry: Int,
+    type_of: Int,
+    data_from_controller: String
+}
+
+input modifyRegister {
+    id: Int!,
+    equipment_id: Int!,
+    address_registry: Int!,
+    type_of: Int!,
+    data_from_controller: String!
+}

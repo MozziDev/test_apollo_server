@@ -1,0 +1,41 @@
+{
+  "name": "test_apollo_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "yarn clean && babel-watch ./src/index.js",
+    "clean": "rm -rf ./node-modules/.cache/babel-loader"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-plugin-import-graphql": "^2.8.1",
+    "babel-watch": "^7.7.0"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.2.2",
+    "@graphql-tools/schema": "^9.0.10",
+    "apollo-server-express": "^3.10.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "graphql": "^16.5.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.11.2",
+    "jsonwebtoken": "^8.5.1",
+    "memorystore": "^1.6.7",
+    "modbus-serial": "^8.0.5",
+    "mysql2": "^2.3.3",
+    "node-schedule": "^2.1.0",
+    "nodemailer": "^6.8.0",
+    "sequelize": "^6.21.3",
+    "workerpool": "^6.2.1",
+    "ws": "^8.11.0"
+  }
+}

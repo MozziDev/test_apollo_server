@@ -1,0 +1,15 @@
+#import "../Types/Registers/types.graphql"
+
+type Query {
+    readData: [RegistersData]
+}
+
+type Mutation {
+    addRegister(dataRegister: modifyRegister!): RegistersData
+    updateRegister(dataRegister: modifyRegister!): RegistersData
+    deleteRegister(id: Int!): String
+}
+
+type Subscription {
+    addRegister: [RegistersData]
+}
